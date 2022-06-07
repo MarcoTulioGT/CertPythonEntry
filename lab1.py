@@ -5,12 +5,6 @@ dura = int(input("Duración del evento (minutos): "))
 # Escribe tu código aqui.
 
 suma_minutos = mins + dura
-
-div = suma_minutos%60
 mod = suma_minutos//60
 
-hora = (hour+mod)%24
-minutos = div
-
-
-print(hora, minutos, sep=":")
+print((hour+mod)%24, suma_minutos%60, sep=":")
